@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?afvbu1');
-  src:  url('../fonts/icomoon.eot?afvbu1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?afvbu1') format('truetype'),
-    url('../fonts/icomoon.woff?afvbu1') format('woff'),
-    url('../fonts/icomoon.svg?afvbu1#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?n5fo05');
+  src:  url('../fonts/icomoon.eot?n5fo05#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?n5fo05') format('truetype'),
+    url('../fonts/icomoon.woff?n5fo05') format('woff'),
+    url('../fonts/icomoon.svg?n5fo05#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  /*speak: never;*/
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -66,6 +66,9 @@
 }
 .icon-gear:before {
   content: "\f013";
+}
+.icon-trash-o:before {
+  content: "\f014";
 }
 .icon-home:before {
   content: "\f015";

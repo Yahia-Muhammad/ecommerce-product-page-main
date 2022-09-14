@@ -211,13 +211,17 @@ function contentCart(){
     
         let imgTopCart = document.createElement("div");
         let textTopCart = document.createElement("div");
+        let trashTopCart = document.createElement("div");
         imgTopCart.className = "img-top-cart";
         textTopCart.className = "text-top-cart";
+        trashTopCart.className = "trash-top-cart";
     
         let ImgText = document.createElement("img");
         let headText = document.createElement("h3");
         let paragText = document.createElement("p");
+        let spanTrash = document.createElement("span");
         ImgText.setAttribute("src", srcImg);
+        spanTrash.className = "icon-trash-o";
 
         let numberParag = document.createElement("span");
         let priceParag = document.createElement("span");
@@ -229,6 +233,9 @@ function contentCart(){
         priceParag.appendChild(document.createTextNode("$" + parseInt(numberChBtn.textContent) * parseInt(priceCart) + ".00"));
         paragText.appendChild(numberParag);
         paragText.appendChild(priceParag);
+
+        trashTopCart.appendChild(spanTrash);
+
         btnCart.appendChild(document.createTextNode("Checkout"));
     
         textTopCart.appendChild(headText);
@@ -236,6 +243,7 @@ function contentCart(){
     
         topCart.appendChild(imgTopCart);
         topCart.appendChild(textTopCart);
+        topCart.appendChild(trashTopCart);
     
         containerCart.appendChild(topCart);
         containerCart.appendChild(btnCart);
@@ -243,4 +251,13 @@ function contentCart(){
     }
 }
 
-console.log(parseInt(priceCart));
+function trashFunction(){
+    document.addEventListener("click", function(e){
+        if(e.target.className === "icon-trash-o"){
+            numberChBtn.textContent = 0;
+            contentCart();
+            iconCart();
+        }
+    });
+}
+trashFunction();

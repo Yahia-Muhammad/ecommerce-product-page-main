@@ -136,6 +136,7 @@ header{
     border-radius: 10px;
     transition: height 0.5s;
     padding: 0px 25px;
+    z-index: 2;
 }
 .header .cart > div:first-child{
     grid-row: 1 / 2;
@@ -166,16 +167,23 @@ header{
     border-radius: 6px;
 }
 .header .cart > div:last-child .top-cart .text-top-cart{
-    width: 80%;
+    width: 68%;
 }
 .header .cart > div:last-child .top-cart .text-top-cart h3{
     font-size: 16px;
-    color:  hsl(220, 14%, 75%);
+    color: hsl(220, 14%, 75%);
     font-weight: 100;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .header .cart > div:last-child .top-cart .text-top-cart p{
     font-size: 14px;
+    color:  hsl(220, 14%, 75%);
+}
+.header .cart > div:last-child .top-cart .trash-top-cart{
+    width: 5%;
     color:  hsl(220, 14%, 75%);
 }
 .header .cart > div:last-child .top-cart .text-top-cart p span:nth-child(1){
