@@ -465,7 +465,7 @@ header{
     .control-screen{
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: 10vh;
     }
     .container-img{
         width: 45%;
