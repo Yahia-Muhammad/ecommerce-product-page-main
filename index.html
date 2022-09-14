@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/icon.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div id="item-left" class="head-left">
+          <span class="icon-bars"></span>
+        </div>
+        <div class="text-logo">sneakers</div>
+        <div id="list" class="list">
+          <div class="black-background"></div>
+          <ul>
+            <li><span class="icon-close"></span></li>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div id="head-right" class="head-right">
+          <span>
+            <span onclick="showCart()" class="icon-cart"></span>
+            <span id="number-icon-cart"></span>
+          </span>
+          <img src="images/image-avatar.png" alt="img">
+        </div>
+        <div id="cart" class="cart">
+          <div>Cart</div>
+          <hr>
+          <div>Your cart is empty</div>
+        </div>
+      </div>
+      <hr>
+  </header>
+  <div class="control-screen container">
+    <div class="container-img">
+      <div id="container-img" class="cont-images">
+        <img class="" src="images/image-product-1.jpg" alt="img">
+        <img src="images/image-product-2.jpg" alt="img">
+        <img src="images/image-product-3.jpg" alt="img">
+        <img src="images/image-product-4.jpg" alt="img">
+      </div>
+        <div id="smallimg" class="images">
+          <img src="images/image-product-1-thumbnail.jpg" alt="img">
+          <img src="images/image-product-2-thumbnail.jpg" alt="img">
+          <img src="images/image-product-3-thumbnail.jpg" alt="img">
+          <img src="images/image-product-4-thumbnail.jpg" alt="img">
+        </div>
+          <div id="icons" class="icon">
+            <span class="icon-chevron-left"></span>
+            <span class="icon-chevron-right"></span>
+          </div>
+    </div>
+    <div class="text-body">
+      <div class="container">
+        <div class="text">
+          <span>SNEAKER COMPANY</span>
+          <h1 id="text-cart">Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+        </div>
+        <div class="price">
+          <h2 id="prict-cart">$125.00</h2>
+          <span>50%</span>
+          <span>$250.00</span>
+        </div>
+        <div class="btn">
+          <div id="ch-btn" class="ch-btn">
+            <span><span>-</span><span>+</span></span>
+            <span>0</span>
+          </div>
+          <div class="btn-add">Add to cart</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cool" class="cool">
+    <div class="sool">
+      <span><span class="icon-close"></span></span>
+      <div class="container-img">
+        <div id="container-img" class="cont-images">
+          <img class="" src="images/image-product-1.jpg" alt="img">
+          <img src="images/image-product-2.jpg" alt="img">
+          <img src="images/image-product-3.jpg" alt="img">
+          <img src="images/image-product-4.jpg" alt="img">
+        </div>
+          <div id="smallimg" class="images">
+            <img src="images/image-product-1-thumbnail.jpg" alt="img">
+            <img src="images/image-product-2-thumbnail.jpg" alt="img">
+            <img src="images/image-product-3-thumbnail.jpg" alt="img">
+            <img src="images/image-product-4-thumbnail.jpg" alt="img">
+          </div>
+            <div id="icons" class="icon">
+              <span class="icon-chevron-left"></span>
+              <span class="icon-chevron-right"></span>
+            </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/code.js"></script>
+</body>
+</html>
